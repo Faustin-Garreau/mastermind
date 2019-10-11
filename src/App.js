@@ -5,11 +5,11 @@ import logo from "./img/logo.png";
 function App() {
   return (
     <div className="App">
-      <header className="flex flex-col justify-center items-center">
+      <header className="p-1 flex justify-between">
         <div className="logo">
-          <img className="mx-auto" id="logo" src={logo} alt="logo"/>
+          <img id="logo" src={logo} alt="logo"/>
         </div>
-        <nav className="nav">
+        <nav className="nav flex items-center">
           <ul className="nav-ul flex">
             <li>
               Scores
@@ -24,184 +24,193 @@ function App() {
         </nav>
       </header>
       <main>
-        <div className="mastermind flex flex-col justfiy-center items-center">
-          <div className="master-row flex">
-            <div className="master-col flex items-center">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+        <div className="mastermind p-5">
+          <div className="master-row flex p-1">
+            <div className="master-col w-4/5 flex justify-around">
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+              <div className="rounded"></div>
             </div>
-            <div className="master-col2">
-              <div className="master-col2-top flex">
-                <div></div>
-                <div></div>
+            <div className="master-col2 w-1/5 flex flex-col justify-between">
+              <div className="master-col2-top flex justify-around">
+                <div className="rounded"></div>
+                <div className="rounded"></div>
               </div>
-              <div className="master-col2-bot flex">
-                <div></div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-          <div className="master-row flex">
-            <div className="master-col flex items-center">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div className="master-col2">
-              <div className="master-col2-top flex ">
-                <div></div>
-                <div></div>
-              </div>
-              <div className="master-col2-bot flex">
-                <div></div>
-                <div></div>
+              <div className="master-col2-bot flex justify-around">
+                <div className="rounded"></div>
+                <div className="rounded"></div>
               </div>
             </div>
           </div>
-          <div className="master-row flex">
-            <div className="master-col flex items-center">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+
+          <div className="master-row flex p-1">
+            <div className="master-col w-4/5 flex justify-around">
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+              <div className="rounded"></div>
             </div>
-            <div className="master-col2">
-              <div className="master-col2-top flex">
-                <div></div>
-                <div></div>
+            <div className="master-col2 w-1/5 flex flex-col justify-between">
+              <div className="master-col2-top flex justify-around">
+                <div className="rounded"></div>
+                <div className="rounded"></div>
               </div>
-              <div className="master-col2-bot flex">
-                <div></div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-          <div className="master-row flex">
-            <div className="master-col flex items-center">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div className="master-col2">
-              <div className="master-col2-top flex ">
-                <div></div>
-                <div></div>
-              </div>
-              <div className="master-col2-bot flex">
-                <div></div>
-                <div></div>
+              <div className="master-col2-bot flex justify-around">
+                <div className="rounded"></div>
+                <div className="rounded"></div>
               </div>
             </div>
           </div>
-          <div className="master-row flex">
-            <div className="master-col flex items-center">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+
+          <div className="master-row flex p-1">
+            <div className="master-col w-4/5 flex justify-around">
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+              <div className="rounded"></div>
             </div>
-            <div className="master-col2">
-              <div className="master-col2-top flex">
-                <div></div>
-                <div></div>
+            <div className="master-col2 w-1/5 flex flex-col justify-between">
+              <div className="master-col2-top flex justify-around">
+                <div className="rounded"></div>
+                <div className="rounded"></div>
               </div>
-              <div className="master-col2-bot flex">
-                <div></div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-          <div className="master-row flex">
-            <div className="master-col flex items-center">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div className="master-col2">
-              <div className="master-col2-top flex ">
-                <div></div>
-                <div></div>
-              </div>
-              <div className="master-col2-bot flex">
-                <div></div>
-                <div></div>
+              <div className="master-col2-bot flex justify-around">
+                <div className="rounded"></div>
+                <div className="rounded"></div>
               </div>
             </div>
           </div>
-          <div className="master-row flex">
-            <div className="master-col flex items-center">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+
+          <div className="master-row flex p-1">
+            <div className="master-col w-4/5 flex justify-around">
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+              <div className="rounded"></div>
             </div>
-            <div className="master-col2">
-              <div className="master-col2-top flex items-center">
-                <div></div>
-                <div></div>
+            <div className="master-col2 w-1/5 flex flex-col justify-between">
+              <div className="master-col2-top flex justify-around">
+                <div className="rounded"></div>
+                <div className="rounded"></div>
               </div>
-              <div className="master-col2-bot flex">
-                <div></div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-          <div className="master-row flex">
-            <div className="master-col flex items-center">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div className="master-col2">
-              <div className="master-col2-top flex items-center">
-                <div></div>
-                <div></div>
-              </div>
-              <div className="master-col2-bot flex">
-                <div></div>
-                <div></div>
+              <div className="master-col2-bot flex justify-around">
+                <div className="rounded"></div>
+                <div className="rounded"></div>
               </div>
             </div>
           </div>
-          <div className="master-row flex">
-            <div className="master-col flex items-center">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+
+          <div className="master-row flex p-1">
+            <div className="master-col w-4/5 flex justify-around">
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+              <div className="rounded"></div>
             </div>
-            <div className="master-col2">
-              <div className="master-col2-top flex items-center">
-                <div></div>
-                <div></div>
+            <div className="master-col2 w-1/5 flex flex-col justify-between">
+              <div className="master-col2-top flex justify-around">
+                <div className="rounded"></div>
+                <div className="rounded"></div>
               </div>
-              <div className="master-col2-bot flex">
-                <div></div>
-                <div></div>
+              <div className="master-col2-bot flex justify-around">
+                <div className="rounded"></div>
+                <div className="rounded"></div>
               </div>
             </div>
           </div>
-          <div className="master-row flex">
-            <div className="master-col flex items-center">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+
+          <div className="master-row flex p-1">
+            <div className="master-col w-4/5 flex justify-around">
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+              <div className="rounded"></div>
             </div>
-            <div className="master-col2">
-              <div className="master-col2-top flex">
-                <div></div>
-                <div></div>
+            <div className="master-col2 w-1/5 flex flex-col justify-between">
+              <div className="master-col2-top flex justify-around">
+                <div className="rounded"></div>
+                <div className="rounded"></div>
               </div>
-              <div className="master-col2-bot flex">
-                <div></div>
-                <div></div>
+              <div className="master-col2-bot flex justify-around">
+                <div className="rounded"></div>
+                <div className="rounded"></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="master-row flex p-1">
+            <div className="master-col w-4/5 flex justify-around">
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+            </div>
+            <div className="master-col2 w-1/5 flex flex-col justify-between">
+              <div className="master-col2-top flex justify-around">
+                <div className="rounded"></div>
+                <div className="rounded"></div>
+              </div>
+              <div className="master-col2-bot flex justify-around">
+                <div className="rounded"></div>
+                <div className="rounded"></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="master-row flex p-1">
+            <div className="master-col w-4/5 flex justify-around">
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+            </div>
+            <div className="master-col2 w-1/5 flex flex-col justify-between">
+              <div className="master-col2-top flex justify-around">
+                <div className="rounded"></div>
+                <div className="rounded"></div>
+              </div>
+              <div className="master-col2-bot flex justify-around">
+                <div className="rounded"></div>
+                <div className="rounded"></div>
+              </div>
+            </div>
+          </div>
+
+           <div className="master-row flex p-1">
+            <div className="master-col w-4/5 flex justify-around">
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+            </div>
+            <div className="master-col2 w-1/5 flex flex-col justify-between">
+              <div className="master-col2-top flex justify-around">
+                <div className="rounded"></div>
+                <div className="rounded"></div>
+              </div>
+              <div className="master-col2-bot flex justify-around">
+                <div className="rounded"></div>
+                <div className="rounded"></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="master-row flex p-1">
+            <div className="master-col w-4/5 flex justify-around">
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+              <div className="rounded"></div>
+            </div>
+            <div className="master-col2 w-1/5 flex flex-col justify-between">
+              <div className="master-col2-top flex justify-around">
+                <div className="rounded"></div>
+                <div className="rounded"></div>
+              </div>
+              <div className="master-col2-bot flex justify-around">
+                <div className="rounded"></div>
+                <div className="rounded"></div>
               </div>
             </div>
           </div>

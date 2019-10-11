@@ -3,7 +3,7 @@
 }
 
 #logo {
-    width: 60%;
+    width: 100px;
 }
 
 .nav-ul {
@@ -14,23 +14,28 @@ ul li {
     margin: 10px;
 }
 
+.master-row {
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.master-row:last-child {
+    border:none;
+}
+
 .master-col>div {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     background-color: green;
-    margin: 3px;
 }
 
 .master-col2-top>div {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background-color: orangered;
-    margin: 3px;
 }
 
 .master-col2-bot>div {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background-color: orangered;
-    margin: 3px;
 }
