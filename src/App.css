@@ -39,3 +39,17 @@ ul li {
     height: 15px;
     background-color: orangered;
 }
+
+.palette>div {
+    width: 35px;
+    height: 35px;
+    background-color: green;
+}
+
+.action>div {
+    width: 35px;
+    height: 35px;
+    background-color: green;
+    color: #fff;
+}
+

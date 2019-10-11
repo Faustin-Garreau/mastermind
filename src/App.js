@@ -216,6 +216,22 @@ function App() {
           </div>
         </div>
       </main>
+      <footer>
+        <div className="select p-2 flex justify-around">
+          <div className="palette flex justify-around w-4/5">
+            <div className="rounded"></div>
+            <div className="rounded"></div>
+            <div className="rounded"></div>
+            <div className="rounded"></div>
+            <div className="rounded"></div>
+            <div className="rounded"></div>
+          </div>
+          <div className="action flex justify-around w-1/5">
+            <div className="undo flex justify-center items-center"><i className="fas fa-undo"></i></div>
+            <div className="start flex justify-center items-center">GO</div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
