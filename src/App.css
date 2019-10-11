@@ -1,55 +1,11 @@
-
+.App {
+    height: 100vh;
+}
 
 #logo {
-    width: 60%;
+    width: 10%;
 }
 
 .nav-ul {
     list-style-type: none;
 }
-
-.plateau {
-    border: 2px solid black;
-}
-
-.master-row {
-    display: flex;
-}
-
-.master-col , .master-col2  {
-    display: flex;
-}
-
-.master-col>div {
-    width: 30px;
-    height: 30px;
-    background-color: green;
-    border-radius: 30px;
-    margin: 3px;
-}
-
-.master-col2>div {
-    width: 30px;
-    height: 30px;
-    background-color: orangered;
-    border-radius: 30px;
-    margin: 3px;
-}
-
-.palette>div {
-    width: 30px;
-    height: 30px;
-    background-color: green;
-    border-radius: 15px;
-    margin: 3px;
-}
-
-.action>div {
-    width: 45px;
-    height: 30px;
-    background-color: green;
-    border-radius: 10px;
-    margin: 3px;
-}
-
-
