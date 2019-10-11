@@ -3,9 +3,34 @@
 }
 
 #logo {
-    width: 10%;
+    width: 60%;
 }
 
 .nav-ul {
     list-style-type: none;
+}
+
+ul li {
+    margin: 10px;
+}
+
+.master-col>div {
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    margin: 3px;
+}
+
+.master-col2-top>div {
+    width: 20px;
+    height: 20px;
+    background-color: orangered;
+    margin: 3px;
+}
+
+.master-col2-bot>div {
+    width: 20px;
+    height: 20px;
+    background-color: orangered;
+    margin: 3px;
 }
