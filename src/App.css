@@ -43,7 +43,6 @@ ul li {
 .palette>div {
     width: 35px;
     height: 35px;
-    background-color: green;
 }
 
 .action>div {
@@ -53,7 +52,34 @@ ul li {
     color: #fff;
 }
 
+.back-red {
+    background-color: red;
+}
+.back-orange {
+    background-color: orange;
+}
+.back-yellow {
+    background-color: yellow;
+}
+.back-green {
+    background-color: green;
+}
+.back-blue {
+    background-color: blue;
+}
+.back-purple {
+    background-color: purple;
+}
+
 @media screen and (min-width: 768px) {
 
+.master-col2-bot>div {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.master-col2-top>div {
+    margin-left: 3px;
+    margin-right: 3px;
+}
 
 }

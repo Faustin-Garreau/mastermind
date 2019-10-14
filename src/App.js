@@ -219,12 +219,12 @@ function App() {
       <footer>
         <div className="select p-2 flex justify-around md:px-32 lg:px-64">
           <div className="palette flex justify-around w-4/5">
-            <div className="rounded"></div>
-            <div className="rounded"></div>
-            <div className="rounded"></div>
-            <div className="rounded"></div>
-            <div className="rounded"></div>
-            <div className="rounded"></div>
+            <div className="rounded back-red"></div>
+            <div className="rounded back-orange"></div>
+            <div className="rounded back-yellow"></div>
+            <div className="rounded back-green"></div>
+            <div className="rounded back-blue"></div>
+            <div className="rounded back-purple"></div>
           </div>
           <div className="action flex justify-around w-1/5">
             <div className="undo flex justify-center items-center"><i className="fas fa-undo"></i></div>
