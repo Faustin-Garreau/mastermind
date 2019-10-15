@@ -13,12 +13,12 @@ function Ligne() {
         </div>
         <div className="master-col2 w-1/5 flex flex-col justify-between md:flex-row md:items-center md:justify-center">
           <div className="master-col2-top flex justify-around">
-          <Case></Case>
-          <Case></Case>
+          <Case color="orangered"></Case>
+          <Case color="orangered"></Case>
           </div>
           <div className="master-col2-bot flex justify-around">
-          <Case></Case>
-          <Case></Case>
+          <Case color="orangered"></Case>
+          <Case color="orangered"></Case>
           </div>
         </div>
       </div>

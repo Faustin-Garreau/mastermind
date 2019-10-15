@@ -31,13 +31,11 @@ ul li {
 .master-col2-top>div {
     width: 15px;
     height: 15px;
-    background-color: orangered;
 }
 
 .master-col2-bot>div {
     width: 15px;
     height: 15px;
-    background-color: orangered;
 }
 
 .palette>div {
@@ -46,7 +44,7 @@ ul li {
     border: 1px solid black;
 }
 
-.action>div {
+.action>button {
     width: 35px;
     height: 35px;
     background-color: green;

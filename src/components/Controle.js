@@ -8,12 +8,12 @@ function Controle() {
     <footer>
     <div className="select p-2 flex justify-around md:px-32 lg:px-64">
           <div className="palette flex justify-around w-4/5">
-          <Case></Case>
-          <Case></Case>
-          <Case></Case>
-          <Case></Case>
-          <Case></Case>
-          <Case></Case>
+          <Case color="red"></Case>
+          <Case color="orange"></Case>
+          <Case color="yellow"></Case>
+          <Case color="green"></Case>
+          <Case color="blue"></Case>
+          <Case color="purple"></Case>
           </div>
           <Button></Button>
         </div>

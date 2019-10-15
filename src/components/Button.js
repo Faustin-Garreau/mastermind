@@ -4,8 +4,8 @@ import "../App.css";
 function Button() {
     return (
     <div className="action flex justify-around w-1/5">
-        <div className="undo flex justify-center items-center"><i className="fas fa-undo"></i></div>
-        <div className="start flex justify-center items-center">GO</div>
+        <button className="undo flex justify-center items-center"><i className="fas fa-undo"></i></button>
+        <button className="start flex justify-center items-center">GO</button>
       </div>
     );
 }
