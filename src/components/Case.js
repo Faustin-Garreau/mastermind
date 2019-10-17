@@ -2,13 +2,10 @@ import React from 'react';
 import "../App.css";
 
 class Case extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (
-            <div className="rounded" style={{backgroundColor: this.props.color}}></div>
+            <div className="rounded" onClick={() => this.props.colorSelect ? this.props.colorSelect(this.props.color) : null} style={{backgroundColor: this.props.color}}></div>
         );
     }
 }
