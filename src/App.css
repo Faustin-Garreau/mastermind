@@ -1,67 +1,77 @@
-.App {
-    height: 100vh;
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: navy;
 }
 
-#logo {
-    width: 100px;
+nav ul {
+  display: flex;
+  list-style-type: none;
 }
 
-.nav-ul {
-    list-style-type: none;
+header a{
+  padding: 8px 16px;
+  text-decoration: none;
+  color: white;
 }
 
-ul li {
-    margin: 10px;
+button{
+  padding: 8px 16px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: blueviolet
 }
 
-.master-row {
-    border-bottom: 1px solid #d3d3d3;
+main{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
-.master-row:last-child {
-    border:none;
+.logo{
+  display: flex;
+  align-items: center;
 }
 
-.master-col>div {
-    width: 35px;
-    height: 35px;
-    border: 1px solid black;
+.case-combinaison, .color{
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  border-radius: 50%;
 }
 
-.master-col2-top>div {
-    width: 15px;
-    height: 15px;
+.case-result{
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
 }
 
-.master-col2-bot>div {
-    width: 15px;
-    height: 15px;
+.line,.combinaison,.result{
+  display: flex;
 }
 
-.palette>div {
-    width: 35px;
-    height: 35px;
-    border: 1px solid black;
+.red{
+  background: red;
+}
+.orange{
+  background: orange;
+}
+.yellow{
+  background: yellow;
+}
+.green{
+  background: green;
+}
+.blue{
+  background: blue;
+}
+.purple{
+  background: purple;
 }
 
-.action>button {
-    width: 35px;
-    height: 35px;
-    background-color: green;
-    color: #fff;
+.actions{
+  margin-top: 20px;
 }
 
-
-
-@media screen and (min-width: 768px) {
-
-.master-col2-bot>div {
-    margin-left: 3px;
-    margin-right: 3px;
-}
-.master-col2-top>div {
-    margin-left: 3px;
-    margin-right: 3px;
-}
-
-}
