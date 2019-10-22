@@ -13,8 +13,8 @@ function Control(props) {
             </div>
 
             <div className="actions">
-                <button>Undo</button>
-                <button>Submit</button>
+                <button onClick={props.undo}>Undo</button>
+                <button onClick={props.submit}>Submit</button>
             </div>
         </div>
     )

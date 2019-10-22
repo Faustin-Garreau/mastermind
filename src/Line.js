@@ -11,10 +11,10 @@ function Line(props) {
             </div>
 
             <div className="result">
-            <div className={"case-result" + (props.line[1][0] ? props.line[1][0] : "" )}></div>
-            <div className={"case-result" + (props.line[1][1] ? props.line[1][1] : "" )}></div>
-            <div className={"case-result" + (props.line[1][2] ? props.line[1][2] : "" )}></div>
-            <div className={"case-result" + (props.line[1][3] ? props.line[1][3] : "" )}></div>
+            <div className={"case-result " + (props.line[1][0] ? props.line[1][0] : "" )}></div>
+            <div className={"case-result " + (props.line[1][1] ? props.line[1][1] : "" )}></div>
+            <div className={"case-result " + (props.line[1][2] ? props.line[1][2] : "" )}></div>
+            <div className={"case-result " + (props.line[1][3] ? props.line[1][3] : "" )}></div>
             </div>
         </div>
     )
