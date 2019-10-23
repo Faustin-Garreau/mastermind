@@ -12,7 +12,9 @@ class App extends React.Component {
     this.state = {
       currentCase: 0,
       currentLine: 0,
-      combinationToFind: ["red","orange","yellow","green"],
+      iswin: "hidden",
+      isloose: "hidden",
+      combinationToFind: this.aleatoire(),
       game: [
         [[],[]],
         [[],[]],
@@ -32,10 +34,38 @@ class App extends React.Component {
     this.submit = this.submit.bind(this);
   }
 
+  aleatoire() {
+    const combinationToFind = []
+
+    for (var i = 0; i < 4;i++) {
+      let entier = Math.floor(Math.random() * 6);
+      if (entier == 0) {
+        combinationToFind.push("red")
+      } else if (entier == 1) {
+        combinationToFind.push("orange")
+      } else if (entier == 2) {
+        combinationToFind.push("yellow")
+      } else if (entier == 3) {
+        combinationToFind.push("green")
+      } else if (entier == 4) {
+        combinationToFind.push("blue")
+      } else if (entier == 5) {
+        combinationToFind.push("purple")
+      } else {
+        console.log('error aleatoire')
+      }
+    }
+    return combinationToFind
+  }
+
   change(color) {
     const gameBis = [...this.state.game]
-
-    if (this.state.currentCase < 4) { 
+    if (this.state.currentLine == 10) {
+      this.setState((state) => ({
+        isloose: "visible"
+      }));
+    }
+    else if (this.state.currentCase < 4) { 
       gameBis[this.state.currentLine][0].push(color)
 
       this.setState((state) => ({
@@ -65,21 +95,27 @@ class App extends React.Component {
     if (this.state.currentCase === 4) {
       let result = this.compare();
       console.log(result)
-
+     
       for (let index = 0;index < result[0]; index++) {
         gameBis[this.state.currentLine][1].push('black')
       }
       for (let index = 0;index < result[1]; index++) {
         gameBis[this.state.currentLine][1].push('grey')
       }
-     
-    }
+      if (result[0] == 4) {
+        
+        this.setState((state) => ({
+          iswin: "visible"
+        }));
+      }
 
     this.setState((state) => ({
       game: gameBis,
       currentLine: state.currentLine + 1,
       currentCase: state.currentCase = 0
     }));
+    } 
+
   }  
 
   compare() {
@@ -114,6 +150,10 @@ class App extends React.Component {
   return (
     <div className="App">
       <Navbar></Navbar>
+      <div className="result-box">
+      <div className={this.state.iswin} id="win">YOU WIN</div>
+      <div className={this.state.isloose} id="loose">YOU LOOSE</div>
+      </div>
       <main>
         <Plateau className="plateau" game={this.state.game}></Plateau>
         <Control className="control" undo={this.undo} colorize={this.change} submit={this.submit}></Control>
