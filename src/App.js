@@ -12,8 +12,8 @@ class App extends React.Component {
     this.state = {
       currentCase: 0,
       currentLine: 0,
-      iswin: "hidden",
-      isloose: "hidden",
+      msg: "",
+      iswinorloose: "hidden",
       combinationToFind: this.aleatoire(),
       game: [
         [[],[]],
@@ -62,7 +62,8 @@ class App extends React.Component {
     const gameBis = [...this.state.game]
     if (this.state.currentLine == 10) {
       this.setState((state) => ({
-        isloose: "visible"
+        msg: "YOU LOOSE",
+        iswinorloose: "visible"
       }));
     }
     else if (this.state.currentCase < 4) { 
@@ -73,7 +74,7 @@ class App extends React.Component {
         currentCase: state.currentCase + 1,
       }));
     } 
-
+    
   }
 
    undo(color) {
@@ -94,8 +95,7 @@ class App extends React.Component {
     let gameBis = [...this.state.game]
     if (this.state.currentCase === 4) {
       let result = this.compare();
-      console.log(result)
-     
+
       for (let index = 0;index < result[0]; index++) {
         gameBis[this.state.currentLine][1].push('black')
       }
@@ -105,7 +105,8 @@ class App extends React.Component {
       if (result[0] == 4) {
         
         this.setState((state) => ({
-          iswin: "visible"
+          msg: "YOU WIN",
+          iswinorloose: "visible"
         }));
       }
 
@@ -123,15 +124,14 @@ class App extends React.Component {
     let combinationToFind = [...this.state.combinationToFind]
     let good = 0
     let bad = 0
-    console.log(combination,combinationToFind,good,bad)
-
+    
     for(let index = 0; index < combination.length; index++) {
       if (combination[index] == combinationToFind[index]) {
         good++
         combinationToFind[index] = "X"
         combination[index] = "A"
       } 
-      console.log(combination,combinationToFind,good,bad)
+
     }
 
     for (let index = 0; index < combinationToFind.length;index++) {
@@ -151,8 +151,7 @@ class App extends React.Component {
     <div className="App">
       <Navbar></Navbar>
       <div className="result-box">
-      <div className={this.state.iswin} id="win">YOU WIN</div>
-      <div className={this.state.isloose} id="loose">YOU LOOSE</div>
+      <div className={this.state.iswinorloose} id="winorloose">{this.state.msg}</div>
       </div>
       <main>
         <Plateau className="plateau" game={this.state.game}></Plateau>
