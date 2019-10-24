@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.4f28b86c.chunk.css",
-    "main.js": "/my-app/static/js/main.40e3f4c5.chunk.js",
-    "main.js.map": "/my-app/static/js/main.40e3f4c5.chunk.js.map",
-    "runtime-main.js": "/my-app/static/js/runtime-main.75ab5f55.js",
-    "runtime-main.js.map": "/my-app/static/js/runtime-main.75ab5f55.js.map",
-    "static/js/2.1d9ce361.chunk.js": "/my-app/static/js/2.1d9ce361.chunk.js",
-    "static/js/2.1d9ce361.chunk.js.map": "/my-app/static/js/2.1d9ce361.chunk.js.map",
-    "index.html": "/my-app/index.html",
-    "precache-manifest.e71c1c389213c1528e5ab0b2c62088a9.js": "/my-app/precache-manifest.e71c1c389213c1528e5ab0b2c62088a9.js",
-    "service-worker.js": "/my-app/service-worker.js",
-    "static/css/main.4f28b86c.chunk.css.map": "/my-app/static/css/main.4f28b86c.chunk.css.map"
+    "main.css": "/mastermind/static/css/main.4f28b86c.chunk.css",
+    "main.js": "/mastermind/static/js/main.b22346c5.chunk.js",
+    "main.js.map": "/mastermind/static/js/main.b22346c5.chunk.js.map",
+    "runtime-main.js": "/mastermind/static/js/runtime-main.0a89982d.js",
+    "runtime-main.js.map": "/mastermind/static/js/runtime-main.0a89982d.js.map",
+    "static/js/2.1d9ce361.chunk.js": "/mastermind/static/js/2.1d9ce361.chunk.js",
+    "static/js/2.1d9ce361.chunk.js.map": "/mastermind/static/js/2.1d9ce361.chunk.js.map",
+    "index.html": "/mastermind/index.html",
+    "precache-manifest.a72f75fd2d5425751610ef051049b591.js": "/mastermind/precache-manifest.a72f75fd2d5425751610ef051049b591.js",
+    "service-worker.js": "/mastermind/service-worker.js",
+    "static/css/main.4f28b86c.chunk.css.map": "/mastermind/static/css/main.4f28b86c.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.75ab5f55.js",
+    "static/js/runtime-main.0a89982d.js",
     "static/js/2.1d9ce361.chunk.js",
     "static/css/main.4f28b86c.chunk.css",
-    "static/js/main.40e3f4c5.chunk.js"
+    "static/js/main.b22346c5.chunk.js"
   ]
 }
