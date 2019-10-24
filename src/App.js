@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Navbar from './Navbar';
 import Plateau from './Plateau';
-import Line from './Line';
 import Control from './Control';
 
 class App extends React.Component {
@@ -39,17 +38,17 @@ class App extends React.Component {
 
     for (var i = 0; i < 4;i++) {
       let entier = Math.floor(Math.random() * 6);
-      if (entier == 0) {
+      if (entier === 0) {
         combinationToFind.push("red")
-      } else if (entier == 1) {
+      } else if (entier === 1) {
         combinationToFind.push("orange")
-      } else if (entier == 2) {
+      } else if (entier === 2) {
         combinationToFind.push("yellow")
-      } else if (entier == 3) {
+      } else if (entier === 3) {
         combinationToFind.push("green")
-      } else if (entier == 4) {
+      } else if (entier === 4) {
         combinationToFind.push("blue")
-      } else if (entier == 5) {
+      } else if (entier === 5) {
         combinationToFind.push("purple")
       } else {
         console.log('error aleatoire')
@@ -60,10 +59,10 @@ class App extends React.Component {
 
   change(color) {
     const gameBis = [...this.state.game]
-    if (this.state.currentLine == 10) {
+    if (this.state.currentLine === 10) {
       this.setState((state) => ({
         msg: "YOU LOOSE",
-        iswinorloose: "visible"
+        iswinorloose: "visible",
       }));
     }
     else if (this.state.currentCase < 4) { 
@@ -95,18 +94,18 @@ class App extends React.Component {
     let gameBis = [...this.state.game]
     if (this.state.currentCase === 4) {
       let result = this.compare();
-
+      
       for (let index = 0;index < result[0]; index++) {
         gameBis[this.state.currentLine][1].push('black')
       }
       for (let index = 0;index < result[1]; index++) {
         gameBis[this.state.currentLine][1].push('grey')
       }
-      if (result[0] == 4) {
+      if (result[0] === 4) {
         
         this.setState((state) => ({
           msg: "YOU WIN",
-          iswinorloose: "visible"
+          iswinorloose: "visible",
         }));
       }
 
@@ -124,9 +123,9 @@ class App extends React.Component {
     let combinationToFind = [...this.state.combinationToFind]
     let good = 0
     let bad = 0
-    
+
     for(let index = 0; index < combination.length; index++) {
-      if (combination[index] == combinationToFind[index]) {
+      if (combination[index] === combinationToFind[index]) {
         good++
         combinationToFind[index] = "X"
         combination[index] = "A"

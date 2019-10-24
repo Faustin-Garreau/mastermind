@@ -6,8 +6,8 @@ function Navbar(props) {
                 <a href="https://fr.wikipedia.org/wiki/Mastermind" target="_blank" className="logo">Mastermind</a>
             <nav>
                 <ul>
-                <li><a href="#">Scores</a></li>
-                <li><a href="#">Règles</a></li>
+                <li><a href="https://fr.wikipedia.org/wiki/Mastermind">Règles</a></li>
+                <li><a href="#">JeSaisAP</a></li>
                 </ul>
             </nav>
         </header>

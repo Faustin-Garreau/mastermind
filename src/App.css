@@ -1,7 +1,7 @@
 header{
   display: flex;
   justify-content: space-between;
-  background-color: navy;
+  background-color: orangered;
 }
 
 nav ul {
@@ -20,13 +20,15 @@ button{
   border-radius: 10px;
   outline: none;
   border: none;
-  background-color: blueviolet
+  background-color: orangered;
+  color: white;
+  margin: 5px;
 }
 
 main{
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .logo{
@@ -42,6 +44,7 @@ main{
 }
 
 .case-result{
+  margin-left: 5px;
   height: 20px;
   width: 20px;
   border: 1px solid black;
@@ -100,16 +103,18 @@ main{
   padding: 20px 50px 20px 50px;
 }
 
+
 .result-box {
   margin-top: 10px;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 50px) and (max-width: 767px) {
 
 main {
   display: flex;
